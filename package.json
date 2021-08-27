@@ -16,7 +16,7 @@
   "author": "Olga",
   "license": "ISC",
   "bugs": {
-    "url":  "https://github.com/YeliseyevaO/goit-js-hw-12-countries"
+    "url":  "https://github.com/YeliseyevaO/goit-js-hw-12-countries/issues"
   },
   "devDependencies": {
     "parcel-bundler": "^1.12.5",
