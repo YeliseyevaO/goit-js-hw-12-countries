@@ -1,4 +1,4 @@
-/*import './sass/main.scss';*/
+import './sass/main.scss';
 import debounce from 'lodash.debounce';
 import { alert } from '../node_modules/@pnotify/core/dist/PNotify.js';
 import '../node_modules/@pnotify/core/dist/PNotify.css';
@@ -27,7 +27,9 @@ function foundCountry(e) {
           });
         }
         if (countries.length >= 2 && countries.length <= 10) {
-          const countriesMarkUp = countries.map(country => `<li>${country.name}</li>`).join('');
+          const countriesMarkUp = countries
+            .map(country => `<li class='item'>${country.name}</li>`)
+            .join('');
           refs.countryList.innerHTML = countriesMarkUp;
         }
         if (countries.length === 1) {
